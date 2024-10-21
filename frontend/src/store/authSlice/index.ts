@@ -1,6 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+// Define a type for the slice state
+interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+interface Authstate {
+  isAuthenticated: boolean,
+  isLoading: boolean,
+  user: User | null; // user can be of type user or null
+}
+
+const initialState: Authstate = {
   isAuthenticated: false,
   isLoading: false,
   user: null,

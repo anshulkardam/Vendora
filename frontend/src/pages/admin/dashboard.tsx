@@ -1,5 +1,3 @@
-export const AdminDashboard = () =>{
-    return (
-        <div>admin dashboard</div>
-    )
-}
+export const AdminDashboard = () => {
+    return <div>admin dashboard</div>;
+};

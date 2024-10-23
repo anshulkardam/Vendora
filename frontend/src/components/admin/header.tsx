@@ -1,5 +1,3 @@
-export const AdminHeader = () =>{
-    return (
-        <div>admin header</div>
-    )
-}
+export const AdminHeader = () => {
+    return <div>admin header</div>;
+};
